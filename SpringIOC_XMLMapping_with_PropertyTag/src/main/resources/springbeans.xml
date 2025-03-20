@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="c" class="com.entities.Customer">
+		<property name="cust_id" value="1"></property>
+		<property name="cname" value="madhuri"></property>
+		<property name="address" value="pune"></property>
+		<property name="city" ref="c1"></property>
+	</bean>
+
+	<bean id="c1" class="com.entities.City">
+		<property name="cid" value="+91"></property>
+		<property name="name" value="India"></property>
+
+	</bean>
+
+</beans>
